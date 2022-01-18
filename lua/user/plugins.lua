@@ -83,7 +83,6 @@ return packer.startup(function(use)
 
   -- Tree
     use 'kyazdani42/nvim-tree.lua'
-    --use "preservim/nerdtree"
 
   -- Buffer/Tabs
     use "akinsho/bufferline.nvim"
@@ -92,7 +91,7 @@ return packer.startup(function(use)
     use "nvim-lualine/lualine.nvim"
 
   -- Syntax Colors
-    --use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use "sheerun/vim-polyglot"
 
   -- Color Scheme

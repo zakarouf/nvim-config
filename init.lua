@@ -7,7 +7,7 @@ require "user.plugins"
 require "user.makeup"
 require "user.discord"
 require "user.nvimtree"
---require "user.treesitter"
+require "user.treesitter"
 
 require "user.lang" -- Nvim Lsp
 --require "user.coc" -- Coc Lsp
