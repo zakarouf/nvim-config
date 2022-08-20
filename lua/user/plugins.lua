@@ -61,15 +61,16 @@ return packer.startup(function(use)
 
 
   -- COC Lsp, Snippets, Completion (Use either Nvim Lsp Or COC)
-    --use { 'neoclide/coc.nvim', branch = 'release' }
+    use { 'neoclide/coc.nvim', branch = 'release' }
 
   -- LSP
-    use "neovim/nvim-lspconfig"
+  --  use "neovim/nvim-lspconfig"
 
   -- Snippet Engine
     use "L3MON4D3/LuaSnip"
 
   -- 'nvim-cmp' Completion
+  --[[
     use "hrsh7th/nvim-cmp" -- The completion plugin
     use "hrsh7th/cmp-buffer" -- buffer completions
     use "hrsh7th/cmp-path" -- path completions
@@ -77,6 +78,7 @@ return packer.startup(function(use)
     use "saadparwaiz1/cmp_luasnip" -- Snippet completions
     use "hrsh7th/cmp-nvim-lsp" --LSP Completion
     use "hrsh7th/cmp-nvim-lua" 
+  ]]--
 
   -- Icons
     use "kyazdani42/nvim-web-devicons"
@@ -91,7 +93,7 @@ return packer.startup(function(use)
     use "nvim-lualine/lualine.nvim"
 
   -- Syntax Colors
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    --use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use "sheerun/vim-polyglot"
 
   -- Color Scheme
@@ -99,7 +101,12 @@ return packer.startup(function(use)
     --use "WIttyJudge/gruvbox-material.nvim" -- Less Feature
     --use "eddyekofo94/gruvbox-flat.nvim" -- 7% faster
     --use 'shaunsingh/nord.nvim'
-
+  
+  -- Markdown Preview
+    use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+    })
 
   -- Discord Pressence
   use 'andweeb/presence.nvim' 
