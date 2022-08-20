@@ -20,3 +20,11 @@ mv ~/.config/nvim ~/.config/nvim-old # keep an backup of your old config
 mv nvim-config ~/.config/nvim
 ```
 
+## Completion
+
+This config includes 
+1. nvim-coc and;
+2. nvim-lsp
+
+They can be choosen and toggled inside `init.lua` and `lua/user/plugins.lua` by editing the files.
+

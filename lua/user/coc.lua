@@ -16,7 +16,6 @@ keymap("n", "<leader>f", ":CocCommand prettier.formatFile<CR>", {noremap = true}
 -- use <c-space> to trigger completion.
 keymap("i", "<C-Space>", "coc#refresh()", { silent = true, expr = true })
 
-
 --keymap("i", "<TAB>", "coc#pum#visible() ? '<C-n>' : '<TAB>'", {noremap = true, silent = true, expr = true})
 --keymap("i", "<S-TAB>", "coc#pum#visible() ? '<C-p>' : '<C-h>'", {noremap = true, expr = true})
 
